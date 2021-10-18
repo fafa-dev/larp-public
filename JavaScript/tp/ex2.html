@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 2</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Valeur</th>
+        </tr>
+        <script>
+            let n = prompt("Saisissez une valeur", "100");
+            var tab = new Array (10); //dire quil y aura 10 element dans le tableau
+            for(let i = 0; i< tab.length; i++){
+                tab[i] = randomNbr(n); //nous avons attribué i dans le tableau et nous avons mis un chiffre au hazar
+            }
+            tab.sort((a, b) => a - b);
+            
+
+            for(let i = 0; i < tab.length; i++){
+                document.write("<tr>");
+                document.write("<td> Nombre " + (i+1) + "</td>");
+                document.write("<td>" + tab[i]+ "</td>");
+                document.write("</tr>");
+            }
+
+            function randomNbr(n){
+                let val = Math.random() * n;
+                val = Math.floor(val);
+                return val;
+            }
+        </script>
+    </table>
+    
+</body>
+</html>

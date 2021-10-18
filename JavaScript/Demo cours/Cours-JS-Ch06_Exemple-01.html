@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+Exemple 01 chapitre 6 : les fonctions
+-->
+<html>
+    <head>
+        <title>Cours-JS-Ch6_Exemple-01 : Fonction</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function multiplier1(a, b) {
+        
+                return a*b;
+            }
+            function multiplier2(a, b) {
+                var b1 = typeof(b) !== 'undefined' ? b : 1;
+                return a*b1;
+            }
+            function multiplier3(a, b = 2) {
+                //alert(multiplier1.arguments.length);
+                //alert(multiplier1.arguments[0]);
+                //alert(multiplier1.arguments[1]);
+                return a*b;
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <script>
+                alert(multiplier1(2,5,7));  // affiche 10
+                alert(multiplier2(5));  // affiche 5
+                alert(multiplier3(5));  // affiche 10
+                alert(multiplier3(5, 6));  // affiche 30
+                alert(multiplier2(5, 4));   // affiche 20
+                alert(multiplier1(5, undefined));   // affiche NaN
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+Exemple 01 chapitre 6 : les fonctions
+-->
+<html>
+    <head>
+        <title>Cours-JS-Ch6_Exemple-02 : Fonction</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function bonjour(nom) {
+                // nom est un paramètre local
+                ch = "Bonjour ";	 // ch est-elle une variable locale ou globale ?
+                alert("à l'entrée de la fonction : \n" + ch + nom);
+                nom = "Alain";	// on modifie le paramètre local
+                alert("avant la sortie de la fonction :\n" + ch + nom);
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <script>
+                var prenom = "Jacques";
+                bonjour(prenom);
+                // obtient-on le prénom modifié dans la fonction ?
+                alert("après appel de la fonction :\n" + ch + prenom);
+            </script>
+        </div>
+    </body>
+</html>
