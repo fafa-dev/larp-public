@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    
+</head>
+<body>
+
+    <form id="naissance">
+        <fieldset>
+            <legend>Entrez votre date de naissance</legend>
+
+            <label for="annee">année</label>
+            <select name="annee" id="annee"> </select>
+            <label for="mois">mois</label>
+            <select name="mois" id="mois"></select>
+            <label for="">jour</label>
+            <input type="number" id="jour">
+        </fieldset>
+    </form>
+    <br>
+    <form id="unite">
+        <fieldset>
+            <legend>Selectionnez l'unité</legend>
+            <input type="radio" name="unite" value="0">
+            <label for="jours">jours</label>
+            <br>
+            <input type="radio" name="unite" value="1">
+            <label for="mois" >mois</label>
+            <br>
+            <input type="radio" name="unite" value="2">
+            <label for="annee" >années</label>
+        </fieldset>
+    </form>
+    <button  id="bouton">Calculer</button>
+<script src="tpdate.js"></script>
+
+
+</body>
+</html>
