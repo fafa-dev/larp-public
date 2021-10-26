@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+label
+{
+	display: block;
+	width: 150px;
+	float: left;
+}
+
+.formulaire{
+    margin: 20px;
+
+}
+
+#reponse{
+    width: 70%;
+}
+
+#essai{
+    width: 5%;
+
+}
+
+#propo{
+    width: 30%;
+}
+
+#message{
+    width: 20%;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: blue;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+
+}
+
+.bouton{
+   display: flex;
+   justify-content: start;
+
+
+   
+}
+
+button{
+   
+    height: 30px;
+    flex: 1 1 0;
+    margin: 10px;
+}
